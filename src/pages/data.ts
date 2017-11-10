@@ -5,6 +5,8 @@ export class dataArray
     public static count:number=0;
 
     public static salary:number = 500000;
+
+    public static selected:string="";
     
     constructor()
     {

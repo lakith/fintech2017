@@ -1,3 +1,4 @@
+import { AddusersblindPage } from './../pages/addusersblind/addusersblind';
 import { LoginuserPage } from './../pages/loginuser/loginuser';
 
 
@@ -21,7 +22,8 @@ import { Vibration } from '@ionic-native/vibration';
     MyApp,
     HomePage,
     FavouritesPage,
-    LoginuserPage
+    LoginuserPage,
+    AddusersblindPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { Vibration } from '@ionic-native/vibration';
     MyApp,
     HomePage,
     FavouritesPage,
-    LoginuserPage
+    LoginuserPage,
+    AddusersblindPage
   ],
   providers: [
     StatusBar,

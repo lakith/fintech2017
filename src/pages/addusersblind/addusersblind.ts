@@ -27,7 +27,7 @@ export class AddusersblindPage {
     console.log('ionViewDidLoad AddusersblindPage');
   }
 
-  getusername()
+  enterAUser()
   {
     this.speechRecognition.startListening()
     .subscribe(

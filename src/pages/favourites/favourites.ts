@@ -1,9 +1,11 @@
+import { dataArray } from './../data';
 import { AddusersblindPage } from './../addusersblind/addusersblind';
 import { Component,Directive, ElementRef, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { Vibration } from '@ionic-native/vibration';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the FavouritesPage page.
  *
@@ -27,15 +29,16 @@ export class FavouritesPage {
   }
 
   favourite:string="";
+  favourite2:string="";
   
   speak()
   {
-    this.tts.speak('This is favourites page Select your favourite user Or slide right to add a new user')
+    this.tts.speak('This is favourites page double tap Select your favourite user Or slide right to add a new user')
     .then(() => console.log('Success'))
     .catch((reason: any) => console.log(reason));
   }
 
-  getusername()
+  SelectUser()
   {
     this.speechRecognition.startListening()
     .subscribe(
@@ -43,15 +46,32 @@ export class FavouritesPage {
       {
        console.log(matches);
        this.favourite = matches[0];
-       this.favourite = this.favourite;
-      
+       dataArray.selected = this.favourite;
+       this.navCtrl.push(HomePage);
       },
       (onerror) => console.log('error:', onerror)
     )
   }
+  speak2()
+  {
+    this.tts.speak('double tap to Add a new user')
+    .then(() => console.log('Success'))
+    .catch((reason: any) => console.log(reason));
+  }
 
   enterAUser()
   {
-    this.navCtrl.push(AddusersblindPage)
+    this.speechRecognition.startListening()
+    .subscribe(
+      (matches: Array<string>) => 
+      {
+       console.log(matches);
+       this.favourite2 = matches[0];
+       dataArray.names[this.favourite2];
+       dataArray.selected = this.favourite2;
+       this.navCtrl.push(HomePage);
+      },
+      (onerror) => console.log('error:', onerror)
+    )
   }
 }

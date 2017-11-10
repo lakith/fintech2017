@@ -82,12 +82,7 @@
       </ion-grid>
           <!--<h2>this is 3rd page</h2>-->
     </ion-slide>
-    <ion-slide>
-        <h2>user insert</h2>
-        <button ion-button (click)="start()">say your name</button>
-        <ion-label>{{username_}}</ion-label>
-        
-    </ion-slide>
+    
     <ion-slide>
       <ion-grid>
         <ion-row (click)='myfunc4()'>
@@ -119,7 +114,7 @@
       </ion-grid>
     </ion-slide>
     <ion-slide>
-      <ion-grid>
+      <ion-grid (dblclick)='transction(500)'>
         <ion-row>
           <ion-col col-12 col-xl class="ion-col-up-tsis">
           
@@ -130,11 +125,11 @@
 
             
           </ion-col>
-          <ion-col col-12 col-sm class="ion-col-mid-tsis" (click)="onButtonClicked()">
+          <ion-col col-12 col-sm class="ion-col-mid-tsis">
               <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
             <br>
            <div class="by-name">
-            Sister
+            {{selected}}
            </div>
            RS 500.00
             <br>
@@ -147,6 +142,93 @@
          </ion-row>
       </ion-grid>
     </ion-slide>
+    <ion-slide>
+        <ion-grid (dblclick)='transction(1000)'>
+          <ion-row>
+            <ion-col col-12 col-xl class="ion-col-up-tsis">
+            
+              Select
+               <br>
+               Amount
+               <br>
+  
+              
+            </ion-col>
+            <ion-col col-12 col-sm class="ion-col-mid-tsis" >
+                <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
+              <br>
+             <div class="by-name">
+              Sister
+             </div>
+             RS 1000.00
+              <br>
+            
+              
+            </ion-col>
+            <ion-col col-12 col-sm class="ion-col-down-tsis">
+              
+            </ion-col>
+           </ion-row>
+        </ion-grid>
+      </ion-slide>
+      <ion-slide>
+          <ion-grid (dblclick)='transction(2000)' >
+            <ion-row>
+              <ion-col col-12 col-xl class="ion-col-up-tsis">
+              
+                Select
+                 <br>
+                 Amount
+                 <br>
+    
+                
+              </ion-col>
+              <ion-col col-12 col-sm class="ion-col-mid-tsis">
+                  <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
+                <br>
+               <div class="by-name">
+                Sister
+               </div>
+               RS 2000.00
+                <br>
+              
+                
+              </ion-col>
+              <ion-col col-12 col-sm class="ion-col-down-tsis">
+                
+              </ion-col>
+             </ion-row>
+          </ion-grid>
+        </ion-slide>
+        <ion-slide>
+            <ion-grid (dblclick)='transction(5000)'>
+              <ion-row>
+                <ion-col col-12 col-xl class="ion-col-up-tsis">
+                
+                  Select
+                   <br>
+                   Amount
+                   <br>
+      
+                  
+                </ion-col>
+                <ion-col col-12 col-sm class="ion-col-mid-tsis" >
+                    <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
+                  <br>
+                 <div class="by-name">
+                  Sister
+                 </div>
+                 RS 5000.00
+                  <br>
+                
+                  
+                </ion-col>
+                <ion-col col-12 col-sm class="ion-col-down-tsis">
+                  
+                </ion-col>
+               </ion-row>
+            </ion-grid>
+          </ion-slide>
   </ion-slides>
 
 

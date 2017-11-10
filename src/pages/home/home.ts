@@ -26,8 +26,15 @@ export class HomePage {
   public static uname:string[];
   public static i:number=0;
   username_:string;
+  selected:string = dataArray.selected;
+  
+  
   constructor(public navCtrl: NavController, public navParams: NavParams,private speechRecognition: SpeechRecognition,private tts: TextToSpeech,el: ElementRef) {
   this.el = el.nativeElement;
+  if(this.selected=="")
+  {
+    this.selected = "lakith";
+  }
   }
 
   ngOnInit()
@@ -103,5 +110,14 @@ export class HomePage {
     this.tts.speak('Source account . Current balance '+this.salary)
     .then(() => console.log('Success'))
     .catch((reason: any) => console.log(reason));
+  }
+
+  transction(num:number)
+  {
+    dataArray.salary = dataArray.salary-num; 
+    this.tts.speak('Transction Successfull Your current balance is '+dataArray.salary)
+    .then(() => console.log('Success'))
+    .catch((reason: any) => console.log(reason));
+    this.navCtrl.push(HomePage)
   }
 }

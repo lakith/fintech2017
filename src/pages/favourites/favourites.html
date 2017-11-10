@@ -6,17 +6,15 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>favourites</ion-title>
-  </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding (dblclick)='SelectUser()'>
  
-  
-  <ion-grid (click)='speak()' >
+  <ion-slides>
+  <ion-slide>
+  <ion-grid  >
     <ion-row>
       <ion-col col-12 col-sm class="ion-col-up-tf" >
         <br>
@@ -27,7 +25,7 @@
       <ion-col col-12 col-sm class="ion-col-mid-tf">
        
         <br>
-      <img src="../assets/icon/Microphone-icon.png" (dblclick)='enterAUser()'>
+      <img src="../assets/icon/Microphone-icon.png"(click)='speak()' >
         
       </ion-col>
       <ion-col col-12 col-sm class="ion-col-down-tf">
@@ -35,7 +33,29 @@
       </ion-col>
      </ion-row>
   </ion-grid>
-  
+</ion-slide>
+<ion-slide>
+    <ion-grid (click)='speak2()' >
+        <ion-row>
+          <ion-col col-12 col-sm class="ion-col-up-tf" >
+            <br>
+            Success
+            
+             
+          </ion-col>
+          <ion-col col-12 col-sm class="ion-col-mid-tf">
+           
+            <br>
+          <img src="../assets/icon/Microphone-icon.png" (dblclick)='enterAUser()'>
+            
+          </ion-col>
+          <ion-col col-12 col-sm class="ion-col-down-tf">
+            
+          </ion-col>
+         </ion-row>
+      </ion-grid>
+</ion-slide>
+</ion-slides>
  
 
 </ion-content>
