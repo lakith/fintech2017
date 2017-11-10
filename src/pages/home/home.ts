@@ -1,3 +1,4 @@
+import { dataArray } from './../data';
 import { FavouritesPage } from './../favourites/favourites';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -5,6 +6,8 @@ import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import {Directive, ElementRef, OnInit, OnDestroy, Output, EventEmitter} from '@angular/core';
 import {Gesture} from 'ionic-angular/gestures/gesture';
+
+
 
 @Component({
   selector: 'page-home',
@@ -19,7 +22,7 @@ export class HomePage {
 
 
 
-  salary:number = 50000;
+  salary:number = dataArray.salary;
   public static uname:string[];
   public static i:number=0;
   username_:string;

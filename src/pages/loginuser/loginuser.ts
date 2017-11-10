@@ -55,7 +55,8 @@ export class LoginuserPage {
       (onerror) => console.log('error:', onerror)
     )
   }
-
+  
+  getpasswordfinger(){}
   
   time()
   {
