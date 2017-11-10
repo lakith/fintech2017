@@ -1,0 +1,153 @@
+
+
+<ion-content (longpress)='gogo()'>
+  
+  <ion-slides >
+    <ion-slide>
+      <ion-grid>
+      <ion-row (click)='myfunc()'>
+        <ion-col col-12 col-md class="ion-col-up">
+          <h1 id="h1style">
+           Home
+           </h1>
+        </ion-col>
+        <ion-col col-12 col-md class="ion-col-mids">
+         
+        <img src="../assets/icon/Home.png.ico">
+            
+        </ion-col>
+        <ion-col col-12 col-md class="ion-col-down" >
+          <br>
+          <h2 id="h2style">
+          Slide Right 
+          <br>
+          to Main Menue
+          </h2>
+        </ion-col>
+       </ion-row>
+    </ion-grid>
+    </ion-slide>
+    <ion-slide>
+        <ion-grid>
+            <ion-row (click)='myfunc2()' (dblclick)='myFunction()'>
+              <ion-col col-12 col-md class="ion-col-up-fav">
+                <h4 id="h4menustyle" style="font-size:40px">Menue</h4>
+                <h1 id="h1menustyle" style="font-size:70px">
+                Favourite
+                 </h1>
+              </ion-col>
+              <ion-col col-12 col-md class="ion-col-mid-fav">
+                <label></label>
+                <br>
+                <br>
+                <br>
+                  <img src="../assets/icon/favco.png"> 
+              </ion-col>
+              <ion-col col-12 col-md class="ion-col-down-fav">
+                <br>
+                <br>
+                
+                <h2 id="h2menustyle">
+                 1/2
+                </h2>
+              </ion-col>
+             </ion-row>
+          </ion-grid> 
+          
+    </ion-slide> 
+    <ion-slide>
+      <ion-grid>
+        <ion-row (click)='myfunc3()'>
+          <ion-col col-12 col-md class="ion-col-up-transfers">
+            <h4 style="font-size:40px">Menue</h4>
+            <h1 style="font-size:70px" >
+            Transfer
+             </h1>
+          </ion-col>
+          <ion-col col-12 col-md class="ion-col-mid-transfers" >
+            <label></label>
+            <br>
+            <br>
+              <img src="../assets/icon/Flat.ico">
+          </ion-col>
+          <ion-col col-12 col-md class="ion-col-down-transfers">
+            <br>
+            <br>
+            
+            <h2>
+             1/2
+            </h2>
+          </ion-col>
+         </ion-row>
+      </ion-grid>
+          <!--<h2>this is 3rd page</h2>-->
+    </ion-slide>
+    <ion-slide>
+        <h2>user insert</h2>
+        <button ion-button (click)="start()">say your name</button>
+        <ion-label>{{username_}}</ion-label>
+        
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row (click)='myfunc4()'>
+          <ion-col col-12 col-sm class="ion-col-up-transferto">
+            <h1 id="salaryh1" style="font-size:70px">
+             Transfer
+             </h1>
+          </ion-col>
+          <ion-col col-12 col-sm class="ion-col-mid-transferto">
+            From
+            <br>
+            <ion-icon ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+             <br>
+             Salary
+             <div class="saving">
+               Saving
+             </div>
+          </ion-col>
+          <ion-col col-12 col-sm class="ion-col-down-tm">
+            <h2 id="salaryh2">
+              <br>             
+              <br>
+              <div class="change-col">
+             Rs {{salary}}.00
+              </div>
+            </h2>
+          </ion-col>
+         </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 col-xl class="ion-col-up-tsis">
+          
+            Select
+             <br>
+             Amount
+             <br>
+
+            
+          </ion-col>
+          <ion-col col-12 col-sm class="ion-col-mid-tsis" (click)="onButtonClicked()">
+              <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
+            <br>
+           <div class="by-name">
+            Sister
+           </div>
+           RS 500.00
+            <br>
+          
+            
+          </ion-col>
+          <ion-col col-12 col-sm class="ion-col-down-tsis">
+            
+          </ion-col>
+         </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content> 
