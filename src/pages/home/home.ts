@@ -120,4 +120,10 @@ export class HomePage {
     .catch((reason: any) => console.log(reason));
     this.navCtrl.push(HomePage)
   }
+  sayammount(num:number)
+  {
+    this.tts.speak('Transfer '+num+'press double tap to complete the transfer')
+    .then(() => console.log('Success'))
+    .catch((reason: any) => console.log(reason));
+  }
 }

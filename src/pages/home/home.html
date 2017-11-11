@@ -113,26 +113,28 @@
          </ion-row>
       </ion-grid>
     </ion-slide>
-    <ion-slide>
-      <ion-grid (dblclick)='transction(500)'>
+    <ion-slide >
+      <ion-grid (click)="sayammount(500)" (dblclick)='transction(500)'>
         <ion-row>
           <ion-col col-12 col-xl class="ion-col-up-tsis">
-          
+          <h1 style="font-size:70px">
             Select
              <br>
              Amount
              <br>
-
+           </h1>
             
           </ion-col>
           <ion-col col-12 col-sm class="ion-col-mid-tsis">
-              <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
+              <ion-icon ios="ios-arrow-down" md="md-arrow-down" item-height="100px"></ion-icon>
             <br>
            <div class="by-name">
             {{selected}}
            </div>
+           <h2 style="font-size:70px;color: green ">
            RS 500.00
             <br>
+            </h2>
           
             
           </ion-col>
@@ -142,26 +144,29 @@
          </ion-row>
       </ion-grid>
     </ion-slide>
-    <ion-slide>
-        <ion-grid (dblclick)='transction(1000)'>
+    <ion-slide >
+        <ion-grid (click)="sayammount(1000)" (dblclick)='transction(1000)'>
           <ion-row>
             <ion-col col-12 col-xl class="ion-col-up-tsis">
-            
+             <h1 style="font-size:70px">
               Select
                <br>
                Amount
                <br>
+             </h1>  
   
               
             </ion-col>
-            <ion-col col-12 col-sm class="ion-col-mid-tsis" >
-                <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
+            <ion-col col-12 col-sm class="ion-col-mid-tsis">
+                <ion-icon ios="ios-arrow-down" md="md-arrow-down" item-height="100px"></ion-icon>
               <br>
              <div class="by-name">
-              Sister
+              {{selected}}
              </div>
+             <h2 style="font-size:70px;color: green ">
              RS 1000.00
               <br>
+              </h2>
             
               
             </ion-col>
@@ -171,25 +176,28 @@
            </ion-row>
         </ion-grid>
       </ion-slide>
-      <ion-slide>
-          <ion-grid (dblclick)='transction(2000)' >
+      <ion-slide >
+          <ion-grid (click)="sayammount(2000)" (dblclick)='transction(2000)' >
             <ion-row>
               <ion-col col-12 col-xl class="ion-col-up-tsis">
-              
+               <h1 style="font-size:70px">
                 Select
                  <br>
                  Amount
                  <br>
+                </h1> 
     
                 
               </ion-col>
               <ion-col col-12 col-sm class="ion-col-mid-tsis">
-                  <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
+                  <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down" item-height="100px"></ion-icon>
                 <br>
                <div class="by-name">
-                Sister
+           
                </div>
+                <h2 style="font-size:70px;color: green ">
                RS 2000.00
+               </h2>
                 <br>
               
                 
@@ -201,25 +209,28 @@
           </ion-grid>
         </ion-slide>
         <ion-slide>
-            <ion-grid (dblclick)='transction(5000)'>
+            <ion-grid (click)="sayammount(5000)" (dblclick)='transction(5000)'>
               <ion-row>
                 <ion-col col-12 col-xl class="ion-col-up-tsis">
-                
+                    <h1 style="font-size:70px">
                   Select
                    <br>
                    Amount
+                    </h1>
                    <br>
       
                   
                 </ion-col>
                 <ion-col col-12 col-sm class="ion-col-mid-tsis" >
-                    <ion-icon ios="ios-arrow-down-outline" md="md-arrow-down"></ion-icon>
+                    <ion-icon name="arrow-round-down" style="size: 120px"></ion-icon>
                   <br>
                  <div class="by-name">
-                  Sister
+                
                  </div>
+                 <h2 style="font-size:70px;color: green ">
                  RS 5000.00
                   <br>
+                  </h2>
                 
                   
                 </ion-col>
